@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+client.login(process.env.BOT_TOKEN);
 const client = new Discord.Client();
 let a = 0;
 
