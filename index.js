@@ -5,6 +5,9 @@ let a = 0;
 client.once('ready', () => {
 	console.log('Ready!');
 });
+// THIS  MUST  BE  THIS  WAY
+
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
 
 //message listener
 client.on('message', message => {
@@ -27,7 +30,3 @@ client.on('message', message => {
             }
     }
 })
-
-// THIS  MUST  BE  THIS  WAY
-
-client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
