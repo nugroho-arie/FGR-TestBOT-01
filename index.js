@@ -24,36 +24,36 @@ client.on('message', message => {
           case 3:
             message.channel.send('kok ngeyeeel');
             break;
-					case 5:
-						message.channel.send('paan dah');
-						break;
-					case 6:
-						message.channel.send('??????');
-						break;
-					case 8:
-						message.channel.send('Iya iya kak, udah kenal sama Mar kan?');
-						break;
-					case 10:
-						message.channel.send('y');
-						break;
-					case 11:
-						message.channel.send('._.');
-						break;
-					case 12:
-						message.channel.send('iya kak, iyaa');
-						break;
-					case 15:
-						message.channel.send('emangnya aku bolot kaya icangg??');
-						break;
-					case 16:
-						message.channel.send('sekali lagi dapet..........');
-						break;
-					case 20:
-						message.channel.send('hufttttt');
-						break;
+	  case 5:
+	    message.channel.send('paan dah');
+	    break;
+	  case 6:
+	    message.channel.send('??????');
+	    break;
+	  case 8:
+	    message.channel.send('Iya iya kak, udah kenal sama Mar kan?');
+	    break;
+	  case 10:
+	    message.channel.send('y');
+	    break;
+	  case 11:
+	    message.channel.send('._.');
+	    break;
+	  case 12:
+	    message.channel.send('iya kak, iyaa');
+	    break;
+	  case 15:
+	    message.channel.send('emangnya aku bolot kaya icangg??');
+	    break;
+	  case 16:
+	    message.channel.send('sekali lagi dapet..........');
+	    break;
+	  case 20:
+	    message.channel.send('hufttttt');
+	    break;
           case 25:
             a = 0;
-			break;
+	    break;
             }
     }
 })
