@@ -6,8 +6,6 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login(token);
-
 //message listener
 client.on('message', message => {
     if (message.content.includes("bot?")) {
