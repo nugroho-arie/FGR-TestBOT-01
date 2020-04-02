@@ -1,25 +1,35 @@
-require('dotenv').config();
 const Discord = require('discord.js');
-const bot = new Discord.Client();
-const TOKEN = process.env.TOKEN;
+const { prefix, token } = require('./config.json');
+const client = new Discord.Client();
+let a = 0;
 
-bot.login(TOKEN);
-
-bot.on('ready', () => {
-  console.info(`Logged in as ${bot.user.tag}!`);
+client.once('ready', () => {
+	console.log('Ready!');
 });
 
-bot.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('pong');
-    msg.channel.send('pong');
+client.login(token);
 
-  } else if (msg.content.startsWith('!kick')) {
-    if (msg.mentions.users.size) {
-      const taggedUser = msg.mentions.users.first();
-      msg.channel.send(`You wanted to kick: ${taggedUser.username}`);
-    } else {
-      msg.reply('Please tag a valid user!');
+//message listener
+client.on('message', message => {
+    if (message.content.includes("bot?")) {
+        a++;
+        console.log(a);
+        switch (a) {
+          case 1:
+            message.channel.send('Hehe iyaa.. hai kakak namaku Mar! aku marBOT sekre fiagra yaaa. tolong jangan buang sampah sembarangan ya :((');
+            break;
+          case 2:
+            message.channel.send('loh iya?');
+            break;
+          case 3:
+            message.channel.send('kok ngeyeeel');
+            break;
+          case 9:
+            a = 0;
+			break;
+            }
     }
-  }
-});
+})
+    
+	
+
