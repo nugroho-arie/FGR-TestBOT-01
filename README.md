@@ -19,13 +19,13 @@ v1.0.0 ---> Versi sama dengan marBOT terbaru
 	7. Untuk mematikan operasi bot di terminal tekan ctrl+c
 
 #dependencies:
-		discord.js: v12.1.1
-		dotenv: v8.2.0
-		snekfetch: v4.0.4
+1. discord.js: v12.1.1
+2. dotenv: v8.2.0
+3. snekfetch: v4.0.4
 
 version yg gue pake :
-	npm v6.13.4
-	node v12.16.1
+1. npm v6.13.4
+2. node v12.16.1
 
 --kalo mau update dependency harus manual ya, dari package.json diganti dulu,
 baru nanti manual lagi pake
