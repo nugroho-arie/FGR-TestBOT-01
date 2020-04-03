@@ -52,8 +52,17 @@ client.on('message', message => {
 			  case 16:
 				message.channel.send('sekali lagi dapet..........');
 				break;
+				case 19:
+				message.channel.send('ketuanya fiagra mana sih??');
+				break;
 			  case 20:
 				message.channel.send('hufttttt');
+				break;
+				case 21:
+				message.channel.send('hoaammmm');
+				break;
+				case 23:
+				message.channel.send('KATANYA ANAK FILM NONTON GIHHHHHHHHH');
 				break;
 			  case 25:
 				a = 0;
@@ -64,12 +73,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-	if (message.content.includes("online?")) {
+	if (message.content.includes("di sekre?")) {
 		// First we use guild.members.fetch to make sure all members are cached
 message.guild.members.fetch().then(fetchedMembers => {
 	const totalOnline = fetchedMembers.filter(member => member.presence.status === 'online');
 	// We now have a collection with all online member objects in the totalOnline variable
-	message.channel.send(`Sekarang lagi ada ${totalOnline.size} yang lagi online nih kak!`);
+	message.channel.send(`Gatau deh, tapi lagi ada ${totalOnline.size} yang lagi di sekre nih kak!`);
 		});
 	}
 });
