@@ -12,7 +12,8 @@ client.login('Njk1NTI1Nzg3MjAxNDM3NzU3.XobdBA.KRW81mx3PplS0Rfpa-daUNilhSI');//BO
 //message listener
 client.on('message', message => {
     if (message.content.includes("bot")) {
-        a++;
+        //a++;
+	Math.floor(Math.random(a) * 25) + 1;  // returns a random integer from 1 to 25
         console.log(a);
         switch (a) {
           case 1:
