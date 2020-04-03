@@ -22,3 +22,11 @@ v1.0.0 ---> Versi sama dengan marBOT terbaru
 		discord.js: v12.1.1
 		dotenv: v8.2.0
 		snekfetch: v4.0.4
+
+version yg gue pake :
+	npm v6.13.4
+	node v12.16.1
+
+--kalo mau update dependency harus manual ya, dari package.json diganti dulu,
+baru nanti manual lagi pake
+	$ npm install 'package-nya'
