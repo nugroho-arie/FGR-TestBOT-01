@@ -17,3 +17,8 @@ v1.0.0 ---> Versi sama dengan marBOT terbaru
 		$ node index.js
 	6. Tunggu sampai terminal kalian kasih notifikasi bot Ready dsb.
 	7. Untuk mematikan operasi bot di terminal tekan ctrl+c
+
+#dependencies:
+		discord.js: v12.1.1
+		dotenv: v8.2.0
+		snekfetch: v4.0.4
