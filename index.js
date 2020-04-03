@@ -7,7 +7,7 @@ client.once('ready', () => {
 });
 // THIS  MUST  BE  THIS  WAY
 
-client.login(Njk1NTI1Nzg3MjAxNDM3NzU3.XobdBA.KRW81mx3PplS0Rfpa-daUNilhSI);//BOT_TOKEN is the Client Secret
+client.login('Njk1NTI1Nzg3MjAxNDM3NzU3.XobdBA.KRW81mx3PplS0Rfpa-daUNilhSI');//BOT_TOKEN is the Client Secret
 
 //message listener
 client.on('message', message => {
