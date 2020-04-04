@@ -9,14 +9,18 @@ v1.0.0 ---> Versi sama dengan marBOT terbaru
 	1. Install dependencies (ketergantungannya) dulu ya, coba di google node.js seri yg baru dan stable.
 		Kalo mau lebih seamless update gitnya buat commit, install git juga bisa (ini google juga aja).
 	2. Clone git ini ke local user kalian ya. Terus di extract ajah. (Mau taro di git jg bebas deh).
-	3. kalo udah buka terminal / bash / command prompt, terus ketik
+	3. Letakkan isi BOT_TOKEN dari file dotenv ke file token.fiktif.json
+	save as token.json.
+	4. kalo udah buka terminal / bash / command prompt, terus ketik
 		$ cd "folder FGRTestBOT-01"
-	4. Masih di terminal, sekarang kita install dependency nya lagi pake:
+	5. Masih di terminal, sekarang kita install dependency nya lagi pake:
 		$ npm Install
-	5. kalo ga ada error apa - apa, sekarang kita run botnya yah dengan cara :
-		$ node index.js
-	6. Tunggu sampai terminal kalian kasih notifikasi bot Ready dsb.
-	7. Untuk mematikan operasi bot di terminal tekan ctrl+c
+	6. kalo ga ada error apa - apa, sekarang kita run botnya yah dengan cara :
+		$ npm run start			--> start normal.
+		$ npm run dev       --> start developer mode.
+	7. Tunggu sampai terminal kalian kasih notifikasi bot Ready dsb.
+	8. Untuk mematikan operasi bot di terminal tekan ctrl+c, terus pilih yes.
+	9. kalau menggunakan developer mode, pas update js bot bakal terus running tapi crash kalo ada salah code (ini cocok buat ganti2 value, bukan nambahin fitur major).
 
 #dependencies:
 1. discord.js: v12.1.1

@@ -1,5 +1,6 @@
 #PENTING
 .env
+token.json
 
 # Logs
 logs

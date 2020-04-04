@@ -4,14 +4,17 @@
   "description": "TestBOT untuk : marBOT",
   "main": "bot.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "bin": {
+    "FGR-TestBOT-01": "./src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/nugroho-arie/FGR-TestBOT-01.git"
   },
-  "author": "Nugroho",
+  "author": "Arie Nugroho",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/nugroho-arie/FGR-TestBOT-01/issues"
