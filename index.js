@@ -1,13 +1,14 @@
 require('dotenv').config()
 const Discord = require('discord.js');
 const client = new Discord.Client();
-let a = 0;
-let b = 0;
 
 client.login(process.env.BOT_TOKEN);
 
+let a = 0;
+let b = 0;
 
-/* Emitted when the client becomes ready to start working.    */
+
+
 client.once('ready', () => {
   console.log(`Tunggu sebentar ya kak lagi siap - siap. . .`);
 	console.log('Udah siap! Kenalin aku,');
@@ -17,7 +18,6 @@ client.once('ready', () => {
 	console.log(`Di ${client.guilds.cache.size} server.`);
 	client.user.setActivity("Kumpulan Film JADUL terbaik");
 });
-
 //message listener
 client.on('message', message => {
   if (message.content.includes("asu")) {
