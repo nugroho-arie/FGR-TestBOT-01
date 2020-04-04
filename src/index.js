@@ -4,6 +4,5 @@ const client = new Client();
 client.login(token);
 
 require('./core/mainListeners')(client);
-
 //Baca README dulu ya sobat
 //Update Major nih!

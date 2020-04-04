@@ -1,4 +1,4 @@
-module.exports = stats => {
+module.exports = message => {
 if (message.content.includes("sini?")) {
     // First we use guild.members.fetch to make sure all members are cached
 message.guild.members.fetch().then(fetchedMembers => {
