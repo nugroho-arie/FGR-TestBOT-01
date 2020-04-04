@@ -4,11 +4,11 @@
   "description": "TestBOT untuk : marBOT",
   "main": "bot.js",
   "scripts": {
-    "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js"
+    "start": "node ./src/mar.js",
+    "dev": "nodemon ./src/mar.js"
   },
   "bin": {
-    "FGR-TestBOT-01": "./src/index.js"
+    "FGR-TestBOT-01": "./src/mar.js"
   },
   "repository": {
     "type": "git",

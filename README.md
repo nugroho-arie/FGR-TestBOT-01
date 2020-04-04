@@ -2,15 +2,14 @@
 
 #TestBOT untuk marBOT
 
-v1.0.0 ---> Versi sama dengan marBOT terbaru
+v2.0.0 ---> Versi sama dengan marBOT terbaru
 
 	Petunjuk penggunaan :
 
 	1. Install dependencies (ketergantungannya) dulu ya, coba di google node.js seri yg baru dan stable.
 		Kalo mau lebih seamless update gitnya buat commit, install git juga bisa (ini google juga aja).
 	2. Clone git ini ke local user kalian ya. Terus di extract ajah. (Mau taro di git jg bebas deh).
-	3. Letakkan isi BOT_TOKEN dari file dotenv ke file token.fiktif.json
-	save as token.json.
+	3. Letakkan file config.js (contact me), di ./src
 	4. kalo udah buka terminal / bash / command prompt, terus ketik
 		$ cd "folder FGRTestBOT-01"
 	5. Masih di terminal, sekarang kita install dependency nya lagi pake:
