@@ -22,6 +22,7 @@ v1.0.0 ---> Versi sama dengan marBOT terbaru
 1. discord.js: v12.1.1
 2. dotenv: v8.2.0
 3. snekfetch: v4.0.4
+4. nodemon: v2.0.2
 
 version yg gue pake :
 1. npm v6.13.4
