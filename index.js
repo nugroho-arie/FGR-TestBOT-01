@@ -28,12 +28,12 @@ client.on('message', message => {
 			console.log(`a = ${a}`);
       console.log(`b = ${b}`);
       console.log("######");
-      if (b == 1) {
+      if (b === 1) {
         var jbss = "\n```css\nTolong jangan buang sampah sembarangan ya 👍😴\n```";
         message.channel.send(`Hehe iyaa.. hai kakak ${message.author},\nNamaku ${client.user}!
 Aku __mar__-<@&694901218304196639> <#${message.channel.id}> __**fiagra**__ yaaa.${jbss}`);
         return;
-      } else if (1 < b < 20 ) {
+      } else if ( 1 < b < 5 ) {
         switch (a) {
   			  case 1:
   				message.channel.send('loh iya?');
@@ -78,10 +78,7 @@ Aku __mar__-<@&694901218304196639> <#${message.channel.id}> __**fiagra**__ yaaa.
   				message.channel.send('KATANYA ANAK FILM NONTON GIHHHHHHHHH');
   				break;
   				}
-      } else {
-        (b == 20);
-        (b = 0);
-      }
+      } else if ( b === 5 ) {b = 0};
 		}
 });
 
