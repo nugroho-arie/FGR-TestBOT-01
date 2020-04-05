@@ -1,36 +1,31 @@
 const Discord = require("discord.js");
+const Enmap = require("enmap");
+const fs = require("fs");
+
 const client = new Discord.Client();
 const config = require("./config.json");
+client.config = config;
 
-client.on("ready", () => {
-  console.log("Siap kak!");
+fs.readdir("./src/events/", (err, files) => {
+  if (err) return console.error(err);
+  files.forEach(file => {
+    const event = require(`./events/${file}`);
+    let eventName = file.split(".")[0];
+    client.on(eventName, event.bind(null, client));
+  });
 });
 
-client.on("message", (message) => {
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-  if (message.author.bot) return;
-  if (message.content.indexOf(config.prefix) !== 0) return;
-  if(command === 'ping') {
-    message.channel.send('Pong!');
-  } else
-  if (command === 'blah') {
-    message.channel.send('Meh.');
-  }
-  if (command === "asl") {
-    let [age, sex, location] = args;
-    message.reply(`Hello ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna date?`);
-  }
-  if (command === "kick") {
-    let member = message.mentions.members.first();
-    let reason = args.slice(1).join(" ");
-    member.kick(reason);
-  }
-  if(command === "say"){
-    let text = args.join(" ");
-    message.delete();
-    message.channel.send(text);
-  }
+client.commands = new Enmap();
+
+fs.readdir("./src/commands/", (err, files) => {
+  if (err) return console.error(err);
+  files.forEach(file => {
+    if (!file.endsWith(".js")) return;
+    let props = require(`./commands/${file}`);
+    let commandName = file.split(".")[0];
+    console.log(`Attempting to load command ${commandName}`);
+    client.commands.set(commandName, props);
+  });
 });
 
 client.login(config.token);
