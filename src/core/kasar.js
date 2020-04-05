@@ -5,31 +5,31 @@ const kasar = {
   "cok" : "yg ketua fiagra bkn sih?",
   "kucing" : "anjing",
   "lho" : "hee?",
-  "loh" : "he??",
-  /*"8" : "iya kak, iyaa",
-  "9" : "emangnya aku bolot kaya icangg??",
-  "10": "sekali lagi dapet..........",
-  "11": "ketuanya fiagra mana sih??",
-  "12": "hufttttt",
-  "13": "hoaammmm",
-  "14": "KATANYA ANAK FILM NONTON GIHHHHHHHHH",
-  "15": "Kenangan itu cuma hantu di sudut fikir, selama kita cuma diam, selamanya dia tetap jadi hantu. Ga akan pernah jadi kenyataan",
-  "16": "cemburu itu hanya untuk orang yang nggak percaya diri. Dan sekarang aku sedang tidak percaya diri.",
-  "17": "Cinta Tidak Bisa Dipaksakan, Merelakannya Pergi Jauh Lebih Baik Daripada Menggenggamnya Tanpa Cinta",
-  "18": "apapun yang kamu lakukan, baik ataupun buruk, akan selalu ada orang yang berkomentar negatif.",
-  "19": "Yaelaaah serius amat",
-  "20": "IPK nya berapa kak?",
-  "21": "Bawel - bawel gini lulus nggak sih???",
-  "22": "g",
-  "23": "lagi ngapain?",
-  "24": "hari ini puasa gag?",
-  "25": "lebaran pulang kmpung gag?",
-  "26": "Ada yang bagi dua?",
-  "27": "Sekarang kakak gambar orang ya",
-  "28": "Buah apa warnanya kuning isinya pisang??",
-  "29": "Kita belum menyelesaikan pembicaraan kita tadi!!!!",
-  "30": "Salam buat azza dooonggg kak ucupp",
-  "31": "coki kalo minum sukanya tidur",
+  "mbun" : `<@490106476439011338>`,
+  "meong" : "**purrrrrr**",
+  "dim" : `<@421941618669649940>`,
+  "dik": `@603827599357247509>`,
+  "cang": `<@573140862125604864>`,
+  "cup": `<@426825472329121792>`,
+  "rie": `<@448626469716099073>`,
+  "gus": `<@395253803563089922>`,
+  "ji": `<@388248573734551562>`,
+  "jamal": `<@350679429841682435>`,
+  "tyo": `<@403235275553243139>`,
+  "kar": `<@572325618272698372>`,
+  "naf": `<@695218418734989383>`,
+  "yud": `<@694930513756028980>`,
+  "sen": `<@695275105311260763>`,
+  "wil": `<@143013598422237184>`,
+  "lip": `<@457430508490588203>`,
+  "jar": `<@695007217996529665>`,
+  "coki": `<@324701134214135811>`,
+  "vanda": `<@694928275482476565>`,
+  "van": `<@203997697227620353>`,
+  "rik": `<@688683822337753098>`,
+  "wilo": `<@694929724589211768>`,
+  "daniel": `<@588952635198013460>`,
+  "riq": `<@332182517069119491>`,
   "32": "Jar jar jar?? JAARR",
   "33": "Ada yang kenal jibran nggaaak?",
   "34": "Jibran mana sih?",
@@ -39,10 +39,11 @@ const kasar = {
   "38": "Dulu ada yang namanya..",
   "39": "Marhabban yaa ramadhan",
   "40": "Capek kak.."
-*/
+
   }
 module.exports = message => {
-  if(kasar[message.content]) {
-    message.channel.send(`${message.author} ` + kasar[message.content]);
+  const kasark = message.content.toLowerCase();
+  if(kasar[kasark]) {
+    message.channel.send(kasar[kasark] + ` ${message.author}`);
   }
 }

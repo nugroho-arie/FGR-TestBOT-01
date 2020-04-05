@@ -1,7 +1,6 @@
 #PENTING
 .env
 token.json
-config.json
 
 # Logs
 logs
