@@ -1,10 +1,10 @@
-const Discord = require("discord.js");
+const {Client}= require('discord.js');
+const client = new Client();
 const Enmap = require("enmap");
 const fs = require("fs");
-
-const client = new Discord.Client();
 const config = require("./config.json");
 client.config = config;
+require('./core/mainListeners')(client);
 
 fs.readdir("./src/events/", (err, files) => {
   if (err) return console.error(err);
@@ -27,5 +27,4 @@ fs.readdir("./src/commands/", (err, files) => {
     client.commands.set(commandName, props);
   });
 });
-
 client.login(config.token);

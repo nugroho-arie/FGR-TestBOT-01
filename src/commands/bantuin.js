@@ -16,6 +16,12 @@ exports.run = (client, message, args) => {
     case "ping":
     message.channel.send('gini aja pake nanya.\ncoba aja tekan windows+r > cmd ping google.com -t');
     break;
+    case "semprot":
+    message.channel.send('Hah apaa??');
+    break;
+    case "kick":
+    message.channel.send('g');
+    break;
     default:
     message.channel.send("hadeh, baca pelan - pelan jangan **nyosoooooorrr** kakak");
     break;
